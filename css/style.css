@@ -74,3 +74,120 @@ nav>a:hover, nav>a.active {
 	background: #040404;
 	color: white;
 }
+
+/*Slider*/
+
+.slider {
+	margin-top: 15px;
+	position: relative;
+}
+
+.slider>.for-bigPhoto {
+	width: 65%;
+	height: 420px;
+	background: no-repeat center;
+	background-size: cover;
+	float:left;
+}
+
+.slider>.for-sliderInfo {
+	width: 35%;
+	height: 420px;
+	box-sizing: border-box;
+	padding: 50px;
+	float: left;
+	background: #040404;
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty>li {
+	position: relative;
+	border-bottom: 1px solid #1D1D1D;
+	padding: 5px 0;
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty>li::after {
+	content: '';
+	display:block;
+	width: 0;
+	height: 0;
+	position: relative;
+	clear: both;					
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty>li:last-of-type {
+	border-bottom: 0;
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty>li>span {
+	color: white;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-size: 12px;
+}
+
+.slider>.for-sliderInfo>.for-sliderProperty>li>span:nth-of-type(1) {
+	font-weight: bold;
+	float: left;
+}
+					
+.slider>.for-sliderInfo>.for-sliderProperty>li>span:nth-of-type(2) {
+	color: #646464;
+	float: right;
+}
+
+.slider>.for-sliderInfo>.for-totalInfo {
+	color: white;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+.slider>.for-sliderInfo>.for-sliderBtns {
+	list-style: none;
+	padding: 0; margin: 0;		
+}
+
+.slider>.for-sliderInfo>.for-sliderBtns:after {
+	content: '';
+	display:block;
+	width: 0;
+	height: 0;
+	position: relative;
+	clear: both;	
+}
+
+.slider>.for-sliderInfo>.for-sliderBtns>li {
+	float: left;			
+}
+
+.slider>.for-sliderInfo>.for-sliderBtns>li>a {
+	display:block;
+	width: 12px; height: 12px;
+	border:1px solid transparent;
+	border-radius: 50%;
+	background: #27271D;
+	margin-right: 5px;
+}
+
+.slider>.for-sliderInfo>.for-sliderBtns>li>a:hover,
+.slider>.for-sliderInfo>.for-sliderBtns>li>a.active {
+	background: #FF8F00;
+}
+
+.slider>.for-sliderInfo>.for-more {
+	display:block;
+	position: absolute;
+	bottom: 0; right: 0;
+	color: white;
+	font-size: 16px;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	text-decoration: none;
+	background: #FF8F00;
+	padding: 6px 10px;
+}
